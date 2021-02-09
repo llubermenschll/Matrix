@@ -268,7 +268,7 @@ element = check(pos);
 
 if(element != -1) {
 
-	time[element] = ((rand() % (50 - 5 + 1)) + 5);
+	time[element] = ((rand() % (20 - 5 + 1)) + 5);
 
 }
 
