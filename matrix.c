@@ -262,13 +262,13 @@ ioctl(STDOUT_FILENO,TIOCGWINSZ,&w);
 rows = w.ws_row;
 columns = w.ws_col;
 
-for(;;) {
+for( ; rows > 14; ) {
 
 element = check(pos);
 
 if(element != -1) {
 
-	time[element] = ((rand() % (20 - 5 + 1)) + 5);
+	time[element] = ((rand() % (rows - 15 + 1)) + 15);
 
 }
 
